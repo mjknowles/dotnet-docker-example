@@ -9,7 +9,7 @@
             "cwd": "/app/src/dde-web",
             "program": "/app/src/dde-web/bin/Debug/netcoreapp1.1/dde-web.dll",
             "sourceFileMap": {
-                "/app/src/dde-web": "${workspaceRoot}/src/dde-web"
+                "/app": "${workspaceRoot}"
             },
 
             "launchBrowser": {
