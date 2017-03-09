@@ -27,11 +27,11 @@
             "pipeTransport": {
                 "pipeProgram": "/bin/bash",
                 "pipeCwd": "${workspaceRoot}",
-                "pipeArgs": [ "-c", "./dockerTask.sh startDebugging" ],
+                "pipeArgs": [ "-c", "./docker/dockerTask.sh startDebugging" ],
                 "windows": {
                     "pipeProgram": "${env.windir}\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
                     "pipeCwd": "${workspaceRoot}",
-                    "pipeArgs": [ ".\\dockerTask.ps1", "-StartDebugging" ]
+                    "pipeArgs": [ "-ExecutionPolicy", "RemoteSigned", "docker\\dockerTask.ps1", "-StartDebugging" ]
                 }
             }
          }

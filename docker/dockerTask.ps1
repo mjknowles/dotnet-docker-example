@@ -38,8 +38,8 @@ Param(
 )
 
 $imageName="dotnet.docker.example"
-$projectName="dotnetdockerexampe"
-$serviceName="dotnet.docker.example"
+$projectName="dotnetdockerexample"
+$serviceName="dde-web"
 $containerName="${projectName}_${serviceName}_1"
 $publicPort=5000
 $url="http://localhost:$publicPort"
@@ -69,7 +69,6 @@ function CleanAll () {
 
 # Builds the Docker image.
 function BuildImage () {
-    Write-Host "Starting the build."
     $composeFileName = "docker-compose.yml"
     if ($Environment -ne "Release") {
         $composeFileName = "${dockerFileSubDirectory}docker-compose.$Environment.yml"

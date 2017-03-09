@@ -11,7 +11,7 @@ namespace dde_web.Controllers
     {
         public IActionResult Index()
         {
-            var hello = Class1.Hello;
+            var hello = Class1.GetHello();
             return View();
         }
 
