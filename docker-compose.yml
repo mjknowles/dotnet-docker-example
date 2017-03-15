@@ -1,0 +1,14 @@
+version: '2'
+
+services:
+  dde-web:
+    image: dde-web
+    build:
+      context: ./src/dde-web
+      dockerfile: Dockerfile
+
+  dde-api:
+    image: dde-api
+    build:
+      context: ./src/dde-api
+      dockerfile: Dockerfile
